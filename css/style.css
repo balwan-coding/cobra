@@ -226,3 +226,16 @@ section.project-section {
     background-color: var(--darkgray);
 }
 
+.page-button a{
+  background: var(--red);
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 20px;
+  font-family: var(--font-three);
+  transition: all 0.3s;
+}
+.page-button a:hover{
+  background: black;
+  border: 1px solid red;
+}
