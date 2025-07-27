@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Bahiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --white : white;
+    --red : red;
+    --grey : #1B1B1B;
+    --font-one : "Amarante", serif;
+    --font-two : "Bahiana", sans-serif;
+}
+.page-width{
+    max-width: calc(1600px -  80px);
+    margin: auto;
+}
+
+.banner-section{
+    height: 850px;
+    background-image: url("media/wp2929666-mafia-wallpaper-hd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-wrapper{
+    background-color: var(--grey);
+    height: 90px;
+    background: transparent;
+}
+
+.logo-image{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+.logo-image a{
+    width: 90px;
+}
+.navs{
+    display: flex;
+    gap:75px;
+    list-style: none;
+    margin-left: 30px;
+}
+.navs a{
+     font-family: var(--font-one);
+    font-size: 18px;
+    color: var(--white);
+}
+h1.logo-text{
+    font-size: 45px;
+    font-family: var(--font-one);
+    letter-spacing : 2px;
+}
+.logo-text a{
+    color: var(--white);
+}
+.logo-text span{
+    color: var(--red);
+    margin-left: 10px;
+}
+
+.header-logo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+ul.nav-icons{
+    display: flex;
+    align-items: center;
+    gap:35px;
+    list-style: none;
+    margin-right: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    justify-content: space-between;
+    border: 1px solid var(--red);
+    padding: 4px 30px;
+    border-radius: 10px;
+    padding-top: 7px;
+}
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.person-image img{
+    height: 100%;
+    width: 449px;
+}
+p.qoutes{
+    color:var(--white);
+    font-family: var(--font-two);
+    font-size: 80px;
+}
+p.nothing{
+    color:var(--red);
+    font-size: 96px;
+    font-family: var(--font-one);
+}
+.text-with-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 61px;
+    padding-left: 12px;
+}
+p.power-text{
+    color:var(--white);
+    font-family: var(--font-one);
+    font-size: 48px;
+    text-align: center;
+}
+
+.power-line-section{
+    background-color: black;
+    padding: 60px 0px;
+}
