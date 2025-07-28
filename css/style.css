@@ -409,3 +409,80 @@ opacity: 1;
 .form-right-section:hover .form-right-section--image{
   opacity: 0;
 }
+
+/* -------------------------------- humbugur css --------------------------------- */
+
+.hamburgur-container {
+  position: fixed;
+  z-index: 999;
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  max-width: 364px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  right: -370px;
+  top: 15px;
+  transition: .3s;
+}
+
+.menu-icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon-box span {
+  color: #ffffff;
+  font-family: var(--font-one);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.list-container {
+  height: 700px;
+  padding: 10px;
+  background-color: #575757;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.hamburgur-container-list {
+  padding-left: 0;
+}
+
+.hamburgur-container-list .hamburgur-list {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.hamburgur-container-list .hamburgur-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.hamburgur-container-list .hamburgur-list a {
+  text-decoration: none;
+  font-family: var(--font-three);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.hamburgur-container-img {
+  width: 280px;
+}
