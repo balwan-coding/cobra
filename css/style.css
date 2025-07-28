@@ -248,6 +248,7 @@ section.project-section {
 
 .hamburgur-container {
   position: fixed;
+  z-index: 999;
   background-color: #282828;
   padding: 20px;
   border-radius: 20px 0 0 20px;
