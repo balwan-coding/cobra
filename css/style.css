@@ -13,8 +13,8 @@
   --grey: #1B1B1B;
   --font-one: "Amarante", serif;
   --font-two: "Bahiana", sans-serif;
-  --font-three : "Roboto", sans-serif;
-  --darkgray : rgb(10, 10, 10);
+  --font-three: "Roboto", sans-serif;
+  --darkgray: rgb(10, 10, 10);
 }
 
 .page-width {
@@ -22,7 +22,7 @@
   margin: auto;
 }
 
-h2.subheading{
+h2.subheading {
   color: var(--red);
   font-family: var(--font-one);
   font-size: 40px;
@@ -150,7 +150,7 @@ p.power-text {
 
 /* project-section */
 
-.card{
+.card {
   width: 380px;
   height: 400px;
   background-color: var(--grey);
@@ -161,7 +161,7 @@ p.power-text {
   border: 1px solid red;
 }
 
-.card-content{
+.card-content {
   position: relative;
   padding: 20px;
   background: black;
@@ -171,7 +171,8 @@ p.power-text {
   transform: translateY(55%);
   transition: all 0.3s;
 }
-.card-content::before{
+
+.card-content::before {
   content: '';
   position: absolute;
   top: -52px;
@@ -183,50 +184,52 @@ p.power-text {
   box-shadow: inset -48px -48px black;
 }
 
-.card-subtitle{
+.card-subtitle {
   padding-bottom: 30px;
   font-size: 15px;
   font-family: var(--font-three);
 }
 
 .card-subtitle,
-.card-discription{
+.card-discription {
   color: grey;
   font-family: var(--font-three);
 }
 
-.card-content:hover{
+.card-content:hover {
   transform: translateY(0);
 }
 
-.card-title{
+.card-title {
   font-size: 30px;
   font-family: var(--font-three);
 }
 
 .cards-list {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    align-items: center;
-    list-style: none;
-    grid-gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  list-style: none;
+  grid-gap: 80px;
 }
+
 .projects-cards {
-    padding: 0px 100px;
+  padding: 0px 100px;
 }
 
 .project-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-}
-section.project-section {
-    padding: 80px 0px;
-    background-color: var(--darkgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
 }
 
-.page-button a{
+section.project-section {
+  padding: 80px 0px;
+  background-color: var(--darkgray);
+}
+
+.page-button a {
   background: var(--red);
   padding: 10px 30px;
   border-radius: 50px;
@@ -235,7 +238,84 @@ section.project-section {
   font-family: var(--font-three);
   transition: all 0.3s;
 }
-.page-button a:hover{
+
+.page-button a:hover {
   background: black;
   border: 1px solid red;
+}
+
+/* -------------------------------- humbugur css --------------------------------- */
+
+.hamburgur-container {
+  position: fixed;
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  max-width: 364px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  right: -370px;
+  top: 15px;
+  transition: .3s;
+}
+
+.menu-icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon-box span {
+  color: #ffffff;
+  font-family: var(--font-one);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.list-container {
+  height: 700px;
+  padding: 10px;
+  background-color: #575757;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.hamburgur-container-list {
+  padding-left: 0;
+}
+
+.hamburgur-container-list .hamburgur-list {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.hamburgur-container-list .hamburgur-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.hamburgur-container-list .hamburgur-list a {
+  text-decoration: none;
+  font-family: var(--font-three);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.hamburgur-container-img {
+  width: 280px;
 }
