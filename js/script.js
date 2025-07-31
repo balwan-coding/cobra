@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   const userEmail = localStorage.getItem("userEmail");
   const path = window.location.pathname;
 
-  if (!userEmail && path.includes("index.html")) {
+  if (!userEmail && (path === "/" || path.endsWith("index.html"))) {
     window.location.href = "./pages/login.html";
   }
 
@@ -57,7 +57,6 @@ if (signupForm) {
       alert(data.msg);
     }
   });
-  
 }
 
 // ✅ Login
