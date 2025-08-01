@@ -43,7 +43,7 @@ walk in the room.." />
                 <img src="media/logo.png" width="100%" alt="cobra logo" />
               </a>
               <h1 class="logo-text">
-                <a href="#Home">COBRA<span> GANG</span></a>
+                <a href="#">COBRA<span> GANG</span></a>
               </h1>
             </div>
             <div class="header-navigation">
@@ -51,10 +51,10 @@ walk in the room.." />
                 <nav>
                   <ul class="navs">
                     <li>
-                      <a href="">HOME</a>
+                      <a href="#">HOME</a>
                     </li>
                     <li>
-                      <a href="">ABOUT</a>
+                      <a href="/pages/about.html">ABOUT</a>
                     </li>
                     <li>
                       <a href="">CONTACT</a>
@@ -73,7 +73,7 @@ walk in the room.." />
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="#main-section">
                         <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M11.375 13.8125L16.1558 16.639C18.943 18.2869 20.057 18.2869 22.8442 16.639L27.625 13.8125"
@@ -122,7 +122,7 @@ walk in the room.." />
               <a href="#"><span> Home</span></a>
             </li>
             <li class="hamburgur-list">
-              <a href="#"><span> About</span></a>
+              <a href="pages/about.html"><span> About</span></a>
             </li>
             <li class="hamburgur-list">
               <a href="#"><span> Contact</span></a>
@@ -131,13 +131,13 @@ walk in the room.." />
               <a href="#"><span> Message</span></a>
             </li>
             <li class="hamburgur-list">
-              <a href="#"><span> Mail</span></a>
+              <a href="#main-section"><span> Mail</span></a>
             </li>
             <li class="hamburgur-list">
-              <a href="#"><span> Projects</span></a>
+              <a href="#project-section"><span> Projects</span></a>
             </li>
             <li class="hamburgur-list">
-              <a href="#"><span> Members</span></a>
+              <a href="#member-section"><span> Members</span></a>
             </li>
             <li class="hamburgur-list">
               <a href="#"><span> Additional Info</span></a>
@@ -177,7 +177,7 @@ walk in the room.." />
     </div>
   </section>
 
-  <section class="project-section">
+  <section id="project-section" class="project-section">
     <div class="page-width">
       <div class="project-wrapper">
         <div class="page-heading">
@@ -246,7 +246,7 @@ walk in the room.." />
   </section>
 
   <!-------team-section--------->
-  <section class="team-section">
+  <section id="member-section" class="team-section">
     <div class="team-wrapper">
       <div class="page-width">
         <div class="team-inner">
@@ -423,7 +423,7 @@ walk in the room.." />
 
   <!-- message box -->
 
-  <section>
+  <section id="main-section">
     <div class="mail-form-wrapper">
       <div class="mail-form-inner page-width">
 
@@ -434,27 +434,29 @@ walk in the room.." />
             </div>
             <div class="form--form-content"></div>
             <form>
-              <div class="form--name-email">
-                <input type="text" required placeholder="Name">
-                <input type="email" required placeholder="email">
-              </div>
-              <div class="form--other-input">
-                <input type="text">
-                <input type="text">
-              </div>
-              <div class="form--description-box">
-                <textarea style="resize: none;" row="40" cols="50"></textarea>
-              </div>
-              <div class="mail-form--button">
-                <button>
-                  Send
-                  <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M14.383 3.38673C21.5445 1.2166 25.1251 0.131549 27.0511 1.84348C28.977 3.55542 27.7563 6.73829 25.315 13.104L23.6524 17.439C21.7776 22.3278 20.8401 24.7722 19.2946 24.9744C18.8793 25.0288 18.4492 24.9962 18.0381 24.8788C16.5093 24.4426 15.7011 21.8652 14.0847 16.7107C13.7262 15.5674 13.5469 14.9956 13.1386 14.559C13.0201 14.4323 12.8887 14.3155 12.7462 14.2102C12.255 13.8472 11.6118 13.6879 10.3256 13.3692C4.52666 11.9324 1.62721 11.214 1.13634 9.85504C1.00437 9.48967 0.96755 9.10739 1.02873 8.73808C1.25632 7.36444 4.00628 6.53113 9.50621 4.86451L14.383 3.38673Z"
-                      stroke="black" stroke-width="1.5" />
-                  </svg>
-                </button>
-              </div>
+              <form action="#" method="post">
+                <div class="form--name-email">
+                  <input type="text" name="name" required placeholder="Name" aria-label="Name">
+                  <input type="email" name="email" required placeholder="Email" aria-label="Email">
+                </div>
+                <div class="form--other-input">
+                  <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+                  <input type="text" name="phone" placeholder="Phone" aria-label="Phone">
+                </div>
+                <div class="form--description-box">
+                  <textarea style="resize: none;" rows="4" cols="50" name="message" placeholder="Your message" aria-label="Message"></textarea>
+                </div>
+                <div class="mail-form--button">
+                  <button type="submit">
+                    Send
+                    <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.383 3.38673C21.5445 1.2166 25.1251 0.131549 27.0511 1.84348C28.977 3.55542 27.7563 6.73829 25.315 13.104L23.6524 17.439C21.7776 22.3278 20.8401 24.7722 19.2946 24.9744C18.8793 25.0288 18.4492 24.9962 18.0381 24.8788C16.5093 24.4426 15.7011 21.8652 14.0847 16.7107C13.7262 15.5674 13.5469 14.9956 13.1386 14.559C13.0201 14.4323 12.8887 14.3155 12.7462 14.2102C12.255 13.8472 11.6118 13.6879 10.3256 13.3692C4.52666 11.9324 1.62721 11.214 1.13634 9.85504C1.00437 9.48967 0.96755 9.10739 1.02873 8.73808C1.25632 7.36444 4.00628 6.53113 9.50621 4.86451L14.383 3.38673Z"
+                        stroke="black" stroke-width="1.5" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
             </form>
           </div>
           <div class="form-right-section">

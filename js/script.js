@@ -12,19 +12,19 @@ const closeHambuger = () => {
   hamburgurBar.style.right = "-370px";
 };
 
-// ✅ Page load par authentication check
 window.addEventListener("load", () => {
   const userEmail = localStorage.getItem("userEmail");
   const path = window.location.pathname;
 
-  if (!userEmail && (path === "/" || path.endsWith("index.html"))) {
-    window.location.href = "./pages/login.html";
+  const isHomePage = path === "/" || path.endsWith("index.html");
+  const isAuth = path.includes("auth.html");
+
+  if (!userEmail && !isHomePage && !isAuth) {
+    window.location.href = "../pages/auth.html";
   }
 
-  if (
-    userEmail &&
-    (path.includes("login.html") || path.includes("signup.html"))
-  ) {
+  // ✅ User logged in: block login and signup page
+  if (userEmail && isAuth) {
     window.location.href = "../index.html";
   }
 });
@@ -90,3 +90,19 @@ function logout() {
   localStorage.removeItem("userEmail");
   window.location.href = "./pages/login.html";
 }
+
+const toggleBtn = document.getElementById("toggle-btn");
+const formTitle = document.getElementById("form-title");
+
+toggleBtn.addEventListener("click", () => {
+  loginForm.classList.toggle("active");
+  signupForm.classList.toggle("active");
+
+  if (loginForm.classList.contains("active")) {
+    formTitle.innerText = "Login";
+    toggleBtn.innerText = "Don't have an account? Sign Up";
+  } else {
+    formTitle.innerText = "Sign Up";
+    toggleBtn.innerText = "Already have an account? Login";
+  }
+});
