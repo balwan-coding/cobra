@@ -264,7 +264,6 @@ section.project-section {
 .menu-icon-box {
   display: flex;
   justify-content: space-between;
-  margin: 0 11px;
 }
 
 .menu-icon-box span {
@@ -301,7 +300,7 @@ section.project-section {
   content: "";
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 12px;
   width: 10px;
   height: 10px;
   border: 2px solid white;
@@ -320,6 +319,233 @@ section.project-section {
 
 .hamburgur-container-img {
   width: 280px;
+}
+
+
+
+
+
+h2.subheading {
+  color: var(--red);
+  font-family: var(--font-one);
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.banner-section {
+  height: 850px;
+  background-image: url("../media/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-wrapper {
+  background-color: var(--grey);
+  height: 90px;
+  background: transparent;
+}
+
+.logo-image {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.logo-image a {
+  width: 90px;
+}
+
+.navs {
+  display: flex;
+  gap: 75px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navs a {
+  font-family: var(--font-one);
+  font-size: 18px;
+  color: var(--white);
+}
+
+h1.logo-text {
+  font-size: 45px;
+  font-family: var(--font-one);
+  letter-spacing: 2px;
+}
+
+.logo-text a {
+  color: var(--white);
+}
+
+.logo-text span {
+  color: var(--red);
+  margin-left: 10px;
+}
+
+.header-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+ul.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  justify-content: space-between;
+  border: 1px solid var(--red);
+  padding: 4px 30px;
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.person-image img {
+  height: 100%;
+  width: 449px;
+}
+
+p.qoutes {
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 80px;
+}
+
+p.nothing {
+  color: var(--red);
+  font-size: 96px;
+  font-family: var(--font-one);
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 61px;
+  padding-left: 12px;
+}
+
+p.power-text {
+  color: var(--white);
+  font-family: var(--font-one);
+  font-size: 48px;
+  text-align: center;
+}
+
+.power-line-section {
+  background-color: black;
+  padding: 60px 0px;
+}
+
+/* project-section */
+
+.card {
+  width: 380px;
+  height: 400px;
+  background-color: var(--grey);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid red;
+}
+
+.card-content {
+  position: relative;
+  padding: 20px;
+  background: black;
+  color: var(--white);
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  transform: translateY(55%);
+  transition: all 0.3s;
+}
+
+.card-content::before {
+  content: '';
+  position: absolute;
+  top: -52px;
+  right: -48px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: inset -48px -48px black;
+}
+
+.card-subtitle {
+  padding-bottom: 30px;
+  font-size: 15px;
+  font-family: var(--font-three);
+}
+
+.card-subtitle,
+.card-discription {
+  color: grey;
+  font-family: var(--font-three);
+}
+
+.card-content:hover {
+  transform: translateY(0);
+}
+
+.card-title {
+  font-size: 30px;
+  font-family: var(--font-three);
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  list-style: none;
+  grid-gap: 80px;
+}
+
+.projects-cards {
+  padding: 0px 100px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+section.project-section {
+  padding: 80px 0px;
+  background-color: var(--darkgray);
+}
+
+.page-button a {
+  background: var(--red);
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 20px;
+  font-family: var(--font-three);
+  transition: all 0.3s;
+}
+
+.page-button a:hover {
+  background: black;
+  border: 1px solid red;
+
 }
 
 
@@ -719,66 +945,3 @@ h4.name {
 }
 
 /* card-button end */
-
-
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus,
-input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,
-.signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
