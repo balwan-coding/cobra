@@ -945,3 +945,87 @@ h4.name {
 }
 
 /* card-button end */
+
+
+/* footer css */
+
+.footer-wrapper {
+  background-color: black;
+}
+
+.footer-link-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-heading span {
+  color: red;
+  font-size: 20px;
+  padding-top: 60px;
+  display: inline-block;
+  font-family: roboto;
+}
+
+.footer-link-section ul a {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  transition: 0.3s;
+}
+.footer-link-section ul a:hover {
+  text-decoration: underline;
+  color:red;
+}
+.footer-image--logo {
+  width: 200px;
+  height: 200px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  color: red;
+  font-family: Amarante;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.footer-text span {
+  color: white;
+}
+
+.footer-image-text-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-inner {
+  padding: 20px 60px 60px 100px
+}
+
+.footer-link--image ul li a {
+  background-color: red;
+  display: inline-block;
+  padding: 5px 7px 1px 7px;
+  border-radius: 999px;
+}
+
+.footer-link--image ul {
+  grid-template-columns: repeat(4, 50px);
+  display: grid;
+
+}
+.footer-link-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:40px;
+}
+/* footer css end */
